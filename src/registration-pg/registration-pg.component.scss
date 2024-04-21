@@ -1,0 +1,110 @@
+.container{
+    /* border: 1px solid red; */
+    height:100vh;
+    width: 100vw;
+    background: url(./../login-pg/login-bg-img.jpg);
+    background-size: cover;
+    position: fixed;
+    display: flex;
+}
+
+.container .formHolder{
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    width: 40%;
+    height: 85%;
+    margin-top: 70px;
+    margin-left: 10%;
+    background-color: rgba(255,255,255, 0.4);
+}
+
+.error-block{
+    color:red;
+    font-size: small;
+}
+
+.container .formHolder i{
+    font-size: 50px;
+    margin-top: 70px;
+    margin-left: 25%;
+    color:rgb(0, 0, 0, 1)
+}
+
+.container .formHolder i .header{
+    font-family: 'Bitter', serif;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.container .formHolder i h6{
+    margin-left: 75px;
+    margin-top: 30px;
+    font-family: 'Bitter', serif;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.container .inputForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .inputForm span{
+    font-family: 'Bitter', serif;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Maven Pro', sans-serif;
+
+}
+
+.container .inputForm span a{
+    text-decoration: none;
+}
+
+.container .inputForm form{
+    margin-top: 50px;
+}   
+
+.container .inputForm form .inputField{
+    height: 45px;
+    width: 350px;
+    border-radius: 10px;
+    border:none;
+    font-family: 'Bitter', serif;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Maven Pro', sans-serif;
+    outline: none;
+    text-align: center;
+}
+
+.container .inputForm form .submitBtn{
+    height: 45px;
+    width: 350px;
+    border-radius: 10px;
+    border:none;
+    font-family: 'Bitter', serif;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Maven Pro', sans-serif;
+    outline: none;
+    text-align: center;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#togglePassword{
+    font-size: large;
+    margin: 15px;
+    margin-left: -30px;
+    color:grey;
+    cursor: pointer;
+}
+
+.error-block{
+    color: red;
+    float: right;
+    text-align:right;
+    font-size: small;
+    text-wrap: balance;
+}

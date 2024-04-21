@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="formHolder">
+        <i class="fa fa-dumbbell">
+            <span class="header">| FITCORE</span>
+            <h6>Register</h6>
+        </i>
+    <div class="inputForm">
+        <form class="regisForm" [formGroup]="registerForm">
+            <input type="text" placeholder="Name" class="inputField" formControlName="username">
+            <span class="error-block" *ngIf="username?.touched && username?.invalid">
+                <span *ngIf="username?.errors?.['required']">*required</span>
+                <span *ngIf="username?.errors?.['minlength']">*min. 3 characters</span>
+                <span *ngIf="username?.errors?.['capitalError']"><p>*first letter should be capital</p></span>
+            </span>
+            <br><br>
+            <input type="email" placeholder="Email" class="inputField" formControlName="userEmail">
+            <span class="error-block" *ngIf="userEmail?.touched && userEmail?.invalid">
+                <span *ngIf="userEmail?.errors?.['required']">*required</span>
+                <span *ngIf="userEmail?.errors?.['email']">invalid format</span>
+            </span>
+            <br><br>
+            <input type="number" placeholder="Contact" class="inputField" formControlName="contact">
+            <span class="error-block" *ngIf="contact?.touched && contact?.invalid">*required</span>
+            <br><br>
+            <input type="password" placeholder="Password" class="inputField" id="id_password" formControlName="password">
+            <i class="fa fa-eye" id="togglePassword"></i>
+            <span class="error-block" *ngIf="password?.touched && username?.invalid">
+                <span *ngIf="password?.errors?.['required']">*required</span>
+                <span *ngIf="password?.errors?.['minlength']">*min 8 characters</span>
+                <span *ngIf="password?.errors?.['spaceError']">*No space allowed</span>
+            </span>
+            <br><br>
+            <span>Don't have an account? <a routerLink="/login" routerLinkActive="active">Login</a></span>
+            <br><br>
+            <button type="submit" class="submitBtn">REGISTER</button>
+        </form>
+    </div>
+        
+    </div>
+</div>
